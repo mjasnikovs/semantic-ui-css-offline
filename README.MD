@@ -13,7 +13,7 @@ It was created to use with "Semantic UI React" inside "create-react-app". It sho
 
 ## usage in module bundler (Like Webpack)
 
-At the level of your project
+At the top level of your project
 ```JavaScript
 import 'semantic-ui-css-offline'
 ```
