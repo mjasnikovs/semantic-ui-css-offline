@@ -11,7 +11,7 @@ It was created to use with "Semantic UI React" inside "create-react-app". It sho
 ```npm install --save semantic-ui-css-offline```
 
 
-## usage is module bundler (Like Webpack)
+## usage in module bundler (Like Webpack)
 
 At the level of your project
 ```JavaScript
