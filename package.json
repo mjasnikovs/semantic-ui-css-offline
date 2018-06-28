@@ -1,0 +1,40 @@
+{
+  "name": "semantic-ui-css-offline",
+  "version": "1.0.0",
+  "description": "sementic ui css offline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjasnikovs/semantic-ui-css-offline.git"
+  },
+  "keywords": [
+    "sementic",
+    "ui",
+    "css",
+    "offline"
+  ],
+  "author": "Edgars Mjasņikovs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjasnikovs/semantic-ui-css-offline/issues"
+  },
+  "homepage": "https://github.com/mjasnikovs/semantic-ui-css-offline#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "event-stream": "3.3.4",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.4.0",
+    "gulp-download": "0.0.1",
+    "gulp-unzip": "1.0.0",
+    "run-sequence": "2.2.1",
+    "eslint": "5.0.1",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-standard": "3.1.0"
+  }
+}
