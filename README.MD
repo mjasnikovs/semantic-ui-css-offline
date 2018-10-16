@@ -6,9 +6,18 @@ It uses gulp to download and build the newest version of CSS. Additionally modif
 It was created to use with "Semantic UI React" inside "create-react-app". It should work with any configuration if your module bundler have proper support.
 
 
-## install
+## install latest
 
 ```npm install --save semantic-ui-css-offline```
+
+
+
+##  install a specific version
+```
+npm install --save semantic-ui-css-offline@1.0.3-2.4.1 // 2.4.1
+npm install --save semantic-ui-css-offline@1.0.1-2.3.3 // 2.3.3
+npm install --save semantic-ui-css-offline@1.0.1-2.3.2 // 2.3.2
+```
 
 
 ## usage in module bundler (Like Webpack)
