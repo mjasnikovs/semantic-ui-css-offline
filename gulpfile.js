@@ -103,30 +103,6 @@ gulp.task('set-fonts-extension', done => {
 	})
 })
 
-gulp.task('set-fonts-extension', done => {
-	const importFile = resolve(`${TEMP_DIR}/Semantic-UI-master/src/site/globals/site.overrides`)
-	const cssFile = resolve('./src/fontsExtension.css')
-
-	fs.access(importFile, fs.constants.W_OK, err => {
-		if (err) {
-			return done(`${err} is not writable`)
-		}
-
-		fs.readFile(cssFile, 'utf-8', (error, data) => {
-			if (error) {
-				return done(`${error} is not readable`)
-			}
-
-			fs.appendFile(importFile, `${endOfLine}${data}${endOfLine}`, erro => {
-				if (erro) {
-					return done(erro)
-				}
-				return done()
-			})
-		})
-	})
-})
-
 gulp.task('build-sem', done => {
 	const projectDir = resolve(`${TEMP_DIR}/Semantic-UI-master`)
 	const args = ['--gulpfile', `${projectDir}/gulpfile.js`, '--cwd', projectDir, 'build']

@@ -1,5 +1,5 @@
 # semantic-ui-css-offline
-## Semantic-UI Version 2.3.3
+## Semantic-UI Version 2.4.1
 semantic-ui-css-offline package provides Semantic UI CSS style sheet and static files, like fonts and icons.
 It uses gulp to download and build the newest version of CSS. Additionally modifies build settings of Semantic UI to turn off google fonts and adds a newer version of Loto font, to support offline usage and better unicode character support.
 
