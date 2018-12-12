@@ -31,9 +31,14 @@ gulp.task('unzip-sem', () => {
 		.pipe(gulp.dest(TEMP_DIR))
 })
 
+gulp.task('npm-is-garbage-use-yarn', () => {
+	return gulp.src(resolve(`${TEMP_DIR}/Semantic-UI-master/package-lock.json`), {read: false})
+		.pipe(clean())
+})
+
 gulp.task('install-sem', done => {
 	const projectDir = resolve(`${TEMP_DIR}/Semantic-UI-master`)
-	const args = ['--prefix', projectDir, 'install', projectDir, '--ignore-scripts']
+	const args = ['--prefix', projectDir, 'install', projectDir, '--ignore-scripts', '--unsafe-perm=true']
 
 	spawn(/^win/.test(process.platform) ? 'npm.cmd' : 'npm', args, {
 		cwd: process.cwd(),
@@ -140,6 +145,7 @@ gulp.task('default', done => {
 		'pre-clean',
 		'download-sem',
 		'unzip-sem',
+		'npm-is-garbage-use-yarn',
 		'install-sem',
 		'install-sem-gulp',
 		'set-google-fonts-false',
